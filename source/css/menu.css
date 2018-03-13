@@ -1,7 +1,7 @@
 /* ESTILOS DE MENU */
 .menu {
     background-color: #FFFFFF;
-    box-shadow: 0 0 5px #000000;
+    border-bottom: 1px solid #dfe0e0;
     display: flex;
     justify-content: space-between;
     height: 64px;
@@ -36,7 +36,7 @@
     display: none;
 }
 
-.contenido {
+.container {
     margin-top: 84px;
 }
 
