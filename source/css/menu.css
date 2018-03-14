@@ -1,25 +1,28 @@
 /* ESTILOS DE MENU */
-.menu {
+.menu-header {
     background-color: #FFFFFF;
-    border-bottom: 1px solid #dfe0e0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     height: 64px;
-    padding: 0 5%;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    border-bottom: 1px solid var(--menu-linea);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .menu-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu-item {
-    padding: 0 20px;
+    margin-left: 2rem;
 }
 
 .menu-link {
@@ -27,16 +30,12 @@
 }
 
 .menu-link:hover {
-    color: #55565A;
-    border-bottom: 1px solid #55565A;
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
     opacity: .6;
 }
 
-.menu-icono {
+.menu-icon {
     display: none;
-}
-
-.container {
-    margin-top: 84px;
 }
 

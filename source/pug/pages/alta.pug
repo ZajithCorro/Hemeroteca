@@ -3,6 +3,14 @@ append config
     -title = "Hemeroteca | Alta"
     -description = "Inicio de la página"
 
+    -title_section = "Datos de Gaceta"
+    -title_section2 = "Recepcion"
+
 block main
-    .container
-        h1 Alta
+    main.main
+        .container
+            .container-item
+                div.title-section= title_section
+
+            .container-item
+                div.title-section= title_section2
