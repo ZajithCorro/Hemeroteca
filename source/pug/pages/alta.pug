@@ -1,16 +1,23 @@
 extends ../config/template.pug
+include ../includes/mixins.pug
 append config
     -title = "Hemeroteca | Alta"
     -description = "Inicio de la página"
 
     -title_section = "Datos de Gaceta"
-    -title_section2 = "Recepcion"
+    -title_section2 = "Recepción"
 
 block main
     main.main
         .container
             .container-item
-                div.title-section= title_section
-
+                h1.title-section= title_section
+                .data-section
+                    +data-section-item("Número de gaceta", "Número de gaceta")
+                    +data-section-item("Folio", "Folio de gaceta")
+                    +data-section-item("Número de gaceta", "Número de gaceta")
+                    +data-section-item("Folio", "Folio de gaceta")
+                    +data-section-item("Número de gaceta", "Número de gaceta")
+                    +data-section-item("Folio", "Folio de gaceta")
             .container-item
-                div.title-section= title_section2
+                h1.title-section= title_section2

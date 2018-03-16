@@ -1,0 +1,9 @@
+mixin menu-list-item(name , link)
+    li.menu-item
+        a.menu-link(href=link)= name
+
+
+mixin data-section-item(label, name)
+    .container-item
+        label= label
+        input.input-text(type="text", name=name)

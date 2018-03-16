@@ -1,7 +1,9 @@
 /* ESTILOS GENERALES */
 :root {
-    --menu-linea: #DFE0E0;
-    --link-hover: #55565A;
+    --menu-linea:       #DFE0E0;
+    --link-hover:       #55565A;
+    --title-background: rgba(85, 86, 90, 0.8);
+    --border-input:     #CED4DA;
 }
 
 * {
@@ -37,17 +39,47 @@ li {
 }
 
 .container-item {
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-section {
-    background-color: rgba(85, 86, 90, 0.8);
+    background-color: var(--title-background);
     color: #FFFFFF;
-    font-size: 1.2em;
-    text-align: center;
+    font-size: 1.25rem;
+    margin: 20px 0;
     padding: 10px 0;
+    text-align: center;
 }
 
+.data-section {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    width: 90%;
+}
+
+label {
+    color: var(--link-hover);
+}
+
+label::after {
+    content: ":"
+}
+
+.input-text {
+    border-radius: .25rem;
+    border: 1px solid var(--border-input);
+    margin-top: 10px;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}
+
+.input-text:focus {
+    border-color: lightblue;
+}
 
 /* ESTILOS DE MENU */
 .menu-header {
