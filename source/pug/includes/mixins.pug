@@ -3,7 +3,11 @@ mixin menu-list-item(name , link)
         a.menu-link(href=link)= name
 
 
-mixin data-section-item(label, name)
+mixin data-section-item(label, name, type)
     .container-item
-        label= label
-        input.input-text(type="text", name=name)
+        if type
+            label.label-title(for=name)= label
+            input.input-text(type=type, name=name id=name placeholder=name)
+        else
+            label.label-title(for=name)= label
+            input.input-text(type="text", name=name id=name placeholder=name)

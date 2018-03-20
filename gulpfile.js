@@ -23,7 +23,7 @@ gulp.task('html', () =>
     .pipe(plumber())
     .pipe(pug({
       pretty: true
-    })) //pretty: true
+    }))
     .pipe(gulp.dest('./build'))
 );
 

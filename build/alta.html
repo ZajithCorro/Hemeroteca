@@ -27,28 +27,39 @@
           <h1 class="title-section">Datos de Gaceta</h1>
           <div class="data-section">
                 <div class="container-item">
-                  <label>Número de gaceta</label>
-                  <input class="input-text" type="text" name="Número de gaceta"/>
+                  <label class="label-title" for="Número de gaceta">Número de gaceta</label>
+                  <input class="input-text" type="text" name="Número de gaceta" id="Número de gaceta" placeholder="Número de gaceta"/>
                 </div>
                 <div class="container-item">
-                  <label>Folio</label>
-                  <input class="input-text" type="text" name="Folio de gaceta"/>
+                  <label class="label-title" for="Folio de gaceta">Folio</label>
+                  <input class="input-text" type="text" name="Folio de gaceta" id="Folio de gaceta" placeholder="Folio de gaceta"/>
                 </div>
                 <div class="container-item">
-                  <label>Número de gaceta</label>
-                  <input class="input-text" type="text" name="Número de gaceta"/>
+                  <label class="label-title" for="Número páginas">Páginas</label>
+                  <input class="input-text" type="text" name="Número páginas" id="Número páginas" placeholder="Número páginas"/>
                 </div>
                 <div class="container-item">
-                  <label>Folio</label>
-                  <input class="input-text" type="text" name="Folio de gaceta"/>
+                  <label class="label-title" for="Número de tomo de gaceta">Número de tomo</label>
+                  <input class="input-text" type="text" name="Número de tomo de gaceta" id="Número de tomo de gaceta" placeholder="Número de tomo de gaceta"/>
                 </div>
+            <div class="container-item">
+              <label class="label-title">Tipo</label>
+              <div class="container-radio">
+                <input id="Ordinaria" type="radio" name="tipoGaceta"/>
+                <label for="Ordinaria">Ordinaria</label>
+              </div>
+              <div class="container-radio">
+                <input id="Extraordinaria" type="radio" name="tipoGaceta"/>
+                <label for="Extraordinaria">Extraordinaria</label>
+              </div>
+              <div class="container-radio">
+                <input id="Alcance" type="radio" name="tipoGaceta"/>
+                <label for="Alcance">Alcance</label>
+              </div>
+            </div>
                 <div class="container-item">
-                  <label>Número de gaceta</label>
-                  <input class="input-text" type="text" name="Número de gaceta"/>
-                </div>
-                <div class="container-item">
-                  <label>Folio</label>
-                  <input class="input-text" type="text" name="Folio de gaceta"/>
+                  <label class="label-title" for="Fecha de gaceta">Fecha de ejemplar</label>
+                  <input class="input-text" type="date" name="Fecha de gaceta" id="Fecha de gaceta" placeholder="Fecha de gaceta"/>
                 </div>
           </div>
         </div>

@@ -4,20 +4,31 @@ append config
     -title = "Hemeroteca | Alta"
     -description = "Inicio de la página"
 
-    -title_section = "Datos de Gaceta"
-    -title_section2 = "Recepción"
+    -first_section = "Datos de Gaceta"
+    -second_section = "Recepción"
 
 block main
     main.main
         .container
             .container-item
-                h1.title-section= title_section
+                h1.title-section= first_section
                 .data-section
                     +data-section-item("Número de gaceta", "Número de gaceta")
                     +data-section-item("Folio", "Folio de gaceta")
-                    +data-section-item("Número de gaceta", "Número de gaceta")
-                    +data-section-item("Folio", "Folio de gaceta")
-                    +data-section-item("Número de gaceta", "Número de gaceta")
-                    +data-section-item("Folio", "Folio de gaceta")
+                    +data-section-item("Páginas", "Número páginas")
+                    +data-section-item("Número de tomo", "Número de tomo de gaceta")
+                    .container-item
+                        label.label-title Tipo
+                        .container-radio
+                            input#Ordinaria(type="radio", name="tipoGaceta")
+                            label(for="Ordinaria") Ordinaria
+                        .container-radio
+                            input#Extraordinaria(type="radio", name="tipoGaceta")
+                            label(for="Extraordinaria") Extraordinaria
+                        .container-radio
+                            input#Alcance(type="radio", name="tipoGaceta")
+                            label(for="Alcance") Alcance
+                    +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
+
             .container-item
-                h1.title-section= title_section2
+                h1.title-section= second_section

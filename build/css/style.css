@@ -31,6 +31,15 @@ li {
     list-style: none; 
 }
 
+label {
+    color: var(--link-hover);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* ESTILOS ESPECIFICOS */
 .container {
     max-width: 1344px;
     margin-left: auto;
@@ -43,13 +52,8 @@ li {
     flex-direction: column;
 }
 
-.title-section {
-    background-color: var(--title-background);
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    margin: 20px 0;
-    padding: 10px 0;
-    text-align: center;
+.container-radio {
+    margin: 10px 0 5px;
 }
 
 .data-section {
@@ -61,11 +65,16 @@ li {
     width: 90%;
 }
 
-label {
-    color: var(--link-hover);
+.title-section {
+    background-color: var(--title-background);
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
-label::after {
+.label-title::after {
     content: ":"
 }
 
