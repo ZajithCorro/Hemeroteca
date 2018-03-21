@@ -7,7 +7,7 @@ mixin data-section-item(label, name, type)
     .container-item
         if type
             label.label-title(for=name)= label
-            input.input-text(type=type, name=name id=name placeholder=name)
+            input(type=type, name=name id=name placeholder=name)
         else
             label.label-title(for=name)= label
-            input.input-text(type="text", name=name id=name placeholder=name)
+            input(type="text", name=name id=name placeholder=name)

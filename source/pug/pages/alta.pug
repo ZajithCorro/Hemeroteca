@@ -11,24 +11,31 @@ block main
     main.main
         .container
             .container-item
-                h1.title-section= first_section
-                .data-section
+                h1.container-item-title= first_section
+                .container-item-data
                     +data-section-item("Número de gaceta", "Número de gaceta")
                     +data-section-item("Folio", "Folio de gaceta")
-                    +data-section-item("Páginas", "Número páginas")
                     +data-section-item("Número de tomo", "Número de tomo de gaceta")
-                    .container-item
+                    +data-section-item("Páginas", "Número páginas")
+                    .container-item.radio
                         label.label-title Tipo
-                        .container-radio
-                            input#Ordinaria(type="radio", name="tipoGaceta")
-                            label(for="Ordinaria") Ordinaria
-                        .container-radio
-                            input#Extraordinaria(type="radio", name="tipoGaceta")
-                            label(for="Extraordinaria") Extraordinaria
-                        .container-radio
-                            input#Alcance(type="radio", name="tipoGaceta")
-                            label(for="Alcance") Alcance
+                        .container-tipo-radio
+                            div
+                                input#Ordinaria(type="radio", name="tipoGaceta")
+                                label(for="Ordinaria") Ordinaria
+                            div
+                                input#Extraordinaria(type="radio", name="tipoGaceta")
+                                label(for="Extraordinaria") Extraordinaria
+                            div
+                                input#Alcance(type="radio", name="tipoGaceta")
+                                label(for="Alcance") Alcance
                     +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
 
             .container-item
-                h1.title-section= second_section
+                h1.container-item-title= second_section
+                .container-item-data
+                    +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
+                    +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
+                    +data-section-item("Persona quién entrega", "Nombre persona que entrega")
+                    +data-section-item("Ejemplares en hemeroteca", "Número")
+                    
