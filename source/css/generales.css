@@ -52,6 +52,7 @@
 
 .contenedor-item-btns {
     display: grid;
+    /* PRUEBA DE LAYOUT */
 }
 
 .label-titulo::after {
