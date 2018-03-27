@@ -15,7 +15,7 @@ const paths = {
 };
 
 const srcCSS = [
-  './source/css/generales.css', './source/css/menu.css'
+  './source/css/reset.css', './source/css/generales.css', './source/css/menu.css', './source/css/form.css'
 ];
 
 gulp.task('html', () =>

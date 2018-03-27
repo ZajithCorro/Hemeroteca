@@ -1,0 +1,25 @@
+/* ----------------------
+   ESTILOS DE LOS INPUT 
+   ---------------------- */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    color: var(--link-hover);
+    border-radius: .25rem;
+    border: 1px solid var(--border-input);
+    margin-top: 10px;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}
+
+input[type="text"]::placeholder, input[type="date"]::placeholder {
+    color: var(--link-hover);
+}
+
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: lightblue;
+    transition: all 0.3s ease;
+}

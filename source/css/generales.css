@@ -1,4 +1,3 @@
-/* ESTILOS GENERALES */
 :root {
     --menu-linea:       #DFE0E0;
     --link-hover:       #55565A;
@@ -6,56 +5,11 @@
     --border-input:     #CED4DA;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: Lato, Helevetica;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 64px 0 0;
-}
-
-a { 
-    color: #000000; 
-    text-decoration: none; 
-}
-
-a:hover { 
-    text-decoration: none
-}
-
-li { 
-    list-style: none; 
-}
-
-/* ESTILOS DE LOS INPUT */
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-input[type="text"], input[type="date"] {
-    color: var(--link-hover);
-    border-radius: .25rem;
-    border: 1px solid var(--border-input);
-    margin-top: 10px;
-    line-height: 1.5;
-    padding: .375rem .75rem;
-}
-
-input[type="text"]::placeholder, input[type="date"]::placeholder {
-    color: var(--link-hover);
-}
-
-
-input[type="text"]:focus, input[type="date"]:focus {
-    border-color: lightblue;
-}
-
+/* ------------------- */
 /* ESTILOS ESPECIFICOS */
-.container {
+/* ------------------- */
+
+.contenedor {
     max-width: 1344px;
     margin-left: auto;
     margin-right: auto;
@@ -66,19 +20,19 @@ input[type="text"]:focus, input[type="date"]:focus {
     margin-bottom: 20px;
 }
 
-.container-item {
+.contenedor-item {
     display: flex;
     flex-direction: column;
 }
 
-.container-tipo-radio {
+.contenedor-tipo-radio {
     color: var(--link-hover);
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
 }
 
-.container-item-data {
+.contenedor-item-formulario {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,7 +41,7 @@ input[type="text"]:focus, input[type="date"]:focus {
     width: 90%;
 }
 
-.container-item-title {
+.contenedor-item-titulo {
     background-color: var(--title-background);
     color: #FFFFFF;
     font-size: 1.25rem;
@@ -96,20 +50,24 @@ input[type="text"]:focus, input[type="date"]:focus {
     text-align: center;
 }
 
-.label-title::after {
+.contenedor-item-btns {
+    display: grid;
+}
+
+.label-titulo::after {
     content: ":"
 }
 
 @media screen and (max-width: 800px) {
-    .container-item-data {
+    .contenedor-item-formulario {
         grid-template-columns: 1fr;
     }
 
-    .container-tipo-radio {
+    .contenedor-tipo-radio {
         flex-direction: column;
     }
 
-    .container-tipo-radio > div{
+    .contenedor-tipo-radio > div{
         margin-top: 10px;
     }
 }

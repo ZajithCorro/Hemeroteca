@@ -9,17 +9,17 @@ append config
 
 block main
     main.main
-        .container
-            .container-item
-                h1.container-item-title= first_section
-                .container-item-data
+        .contenedor
+            .contenedor-item
+                h1.contenedor-item-titulo= first_section
+                .contenedor-item-formulario
                     +data-section-item("Número de gaceta", "Número de gaceta")
                     +data-section-item("Folio", "Folio de gaceta")
                     +data-section-item("Número de tomo", "Número de tomo de gaceta")
                     +data-section-item("Páginas", "Número páginas")
-                    .container-item.radio
-                        label.label-title Tipo
-                        .container-tipo-radio
+                    .contenedor-item.radio
+                        label.label-titulo Tipo
+                        .contenedor-tipo-radio
                             div
                                 input#Ordinaria(type="radio", name="tipoGaceta")
                                 label(for="Ordinaria") Ordinaria
@@ -31,9 +31,9 @@ block main
                                 label(for="Alcance") Alcance
                     +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
 
-            .container-item
-                h1.container-item-title= second_section
-                .container-item-data
+            .contenedor-item
+                h1.contenedor-item-titulo= second_section
+                .contenedor-item-formulario
                     +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
                     +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
                     +data-section-item("Persona quién entrega", "Nombre persona que entrega")

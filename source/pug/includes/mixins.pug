@@ -4,10 +4,10 @@ mixin menu-list-item(name , link)
 
 
 mixin data-section-item(label, name, type)
-    .container-item
+    .contenedor-item
         if type
-            label.label-title(for=name)= label
+            label.label-titulo(for=name)= label
             input(type=type, name=name id=name placeholder=name)
         else
-            label.label-title(for=name)= label
+            label.label-titulo(for=name)= label
             input(type="text", name=name id=name placeholder=name)
