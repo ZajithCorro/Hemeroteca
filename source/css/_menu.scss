@@ -1,4 +1,6 @@
-/* ESTILOS DE MENU */
+@import 'vars';
+
+/* ----- ----- ESTILOS DE MENÚ ----- ----- */
 .menu-header {
     background-color: #FFFFFF;
     display: flex;
@@ -8,16 +10,13 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid var(--menu-linea);
+    border-bottom: 1px solid $menu-linea;
 }
 
 .menu {
+    @extend %contenedor-medidas;
     display: flex;
     justify-content: space-between;
-    max-width: 1344px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
     width: 100%;
 }
 
@@ -31,15 +30,14 @@
 
 .menu-link {
     padding-bottom: 5px;
-}
 
-.menu-link:hover {
-    color: var(--link-hover);
-    border-bottom: 1px solid var(--link-hover);
-    opacity: .6;
+    &:hover {
+        color: $link-hover;
+        border-bottom: 1px solid $link-hover;
+        opacity: .6;
+    }
 }
 
 .menu-icon {
     display: none;
 }
-

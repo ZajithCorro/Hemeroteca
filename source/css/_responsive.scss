@@ -4,7 +4,7 @@
         padding: 0;
     }
     
-    .contenedor-grid {
+    .form {
         grid-template-columns: 1fr;
     }
 
@@ -12,7 +12,9 @@
         flex-direction: column;
     }
 
-    .contenedor-radio > div{
-        margin-top: 10px;
+    .contenedor-radio {
+        div {
+            margin-top: 10px;
+        }
     }
 }

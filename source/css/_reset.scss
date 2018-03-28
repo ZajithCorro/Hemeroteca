@@ -12,11 +12,11 @@ body {
 
 a { 
     color: #000; 
-    text-decoration: none; 
-}
+    text-decoration: none;
 
-a:hover { 
-    text-decoration: none
+    &:hover {
+        text-decoration: none
+    }
 }
 
 li { 

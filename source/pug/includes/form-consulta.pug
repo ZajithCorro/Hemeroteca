@@ -1,13 +1,22 @@
+include ../includes/mixins.pug
+
 .contenedor
     h1.contenedor-titulo Datos de consulta
-    .contenedor-grid.form
+    .form
         +data-section-item("Número de gaceta", "Número de gaceta")
         .contenedor
             label.label Fecha del ejemplar
-            div.contenedor-inputs
-                input(type="date" class="prueba" data-placeholder="Fecha" aria-required="true")
+            .contenedor-2-input
                 input(type="date")
-        +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
-        div.contenedor-inputs
-            button Limpiar
-            button Consultar
+                input(type="date")
+                
+        .contenedor
+            label.label Fecha de recepción
+            .contenedor-2-input
+                input(type="date")
+                input(type="date")
+        .contenedor-btns
+            button.btn Limpiar
+            button.btn Consultar
+                
+    h1.contenedor-titulo Resultados de búsqueda

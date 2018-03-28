@@ -1,0 +1,21 @@
+/* ----- ----- ESTILOS DE ELEMENTOS EN FORMULARIOS ----- ----- */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    color: $link-hover;
+    border-radius: .25rem;
+    border: 1px solid $border-input;
+    margin-top: 10px;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}
+
+.btn {
+    background-color: blue;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+}

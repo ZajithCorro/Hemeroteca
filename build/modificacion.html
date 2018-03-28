@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Modificación de la gaceta"/>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/styles.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:700"/>
     <title>Hemeroteca | Modificación</title>
   </head>
@@ -23,30 +23,32 @@
     </header>
     <main class="main">
       <div class="contenedor">
-        <div class="contenedor">
-          <h1 class="contenedor-titulo">Datos de consulta</h1>
-          <div class="contenedor-grid form">
+        <h1 class="contenedor-titulo">Datos de consulta</h1>
+        <div class="form">
                 <div class="contenedor">
                   <label class="label" for="Número de gaceta">Número de gaceta</label>
                   <input type="text" name="Número de gaceta" id="Número de gaceta" placeholder="Número de gaceta"/>
                 </div>
-            <div class="contenedor">
-              <label class="label">Fecha del ejemplar</label>
-              <div class="contenedor-inputs">
-                <input class="prueba" type="date" data-placeholder="Fecha" aria-required="true"/>
-                <input type="date"/>
-              </div>
-            </div>
-                <div class="contenedor">
-                  <label class="label" for="Fecha de recepción">Fecha de recepción</label>
-                  <input type="date" name="Fecha de recepción" id="Fecha de recepción" placeholder="Fecha de recepción"/>
-                </div>
-            <div class="contenedor-inputs">
-              <button>Limpiar</button>
-              <button>Consultar</button>
+          <div class="contenedor">
+            <label class="label">Fecha del ejemplar</label>
+            <div class="contenedor-2-input">
+              <input type="date"/>
+              <input type="date"/>
             </div>
           </div>
+          <div class="contenedor">
+            <label class="label">Fecha de recepción</label>
+            <div class="contenedor-2-input">
+              <input type="date"/>
+              <input type="date"/>
+            </div>
+          </div>
+          <div class="contenedor-btns">
+            <button class="btn">Limpiar</button>
+            <button class="btn">Consultar</button>
+          </div>
         </div>
+        <h1 class="contenedor-titulo">Resultados de búsqueda</h1>
       </div>
     </main>
   </body>

@@ -1,0 +1,52 @@
+@import 'vars';
+
+/* ----- ----- ESTILOS DE CONTENEDORES ----- ----- */
+.main {
+    @extend %contenedor-medidas;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    @extend %contenedor-grid;
+    align-self: center;
+    width: 90%;
+}
+
+.contenedor-titulo {
+    background-color: $title-background;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contenedor-radio {
+    color: $link-hover;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.contenedor-2-input {
+    @extend %contenedor-grid;
+}
+
+.contenedor-btns {
+    @extend %contenedor-grid;
+    padding: 15px;
+}
+
+
+.contenedor-btns > button:hover {
+    cursor: pointer;
+}
+
+.label::after {
+    content: ":"
+}

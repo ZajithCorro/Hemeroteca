@@ -9,20 +9,21 @@ block main
     main.main
         .contenedor
             h1.contenedor-titulo Datos de consulta
-            .contenedor-grid.form
+            .form
                 +data-section-item("Número de gaceta", "Número de gaceta")
                 .contenedor
                     label.label Fecha del ejemplar
-                    .contenedor-grid
+                    .contenedor-2-input
                         input(type="date")
                         input(type="date")
+                        
                 .contenedor
                     label.label Fecha de recepción
-                    .contenedor-grid
+                    .contenedor-2-input
                         input(type="date")
                         input(type="date")
-                .contenedor-grid.contenedor-btns
-                    button Limpiar
-                    button Consultar
+                .contenedor-btns
+                    button.btn Limpiar
+                    button.btn Consultar
                 
         h1.contenedor-titulo Resultados de búsqueda

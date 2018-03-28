@@ -9,17 +9,12 @@ const sass = require('gulp-sass');
 const paths = {
   srcHTML: './source/pug/pages/*.pug',
   srcJS: './source/js/*.js',
-  srcSASS: './source/css/sass/styles.scss',
+  srcSASS: './source/css/styles.scss',
 
   tmpHTML: './source/pug/**/*.pug',
   tmpJS: './source/js/**/*.js',
-  tmpCSS: './source/css/*.css',
-  tmpSASS: './source/css/sass/*.scss'
+  tmpSASS: './source/css/*.scss'
 };
-
-const srcCSS = [
-  './source/css/reset.css', './source/css/generales.css', './source/css/menu.css', './source/css/form.css', './source/css/responsive.css'
-];
 
 gulp.task('html', () =>
   gulp.src(paths.srcHTML)
@@ -36,7 +31,7 @@ gulp.task('sass', () =>
     .pipe(sass({
       outputStyle: 'expanded'
     }))
-    .pipe(gulp.dest('./build/css/sass'))
+    .pipe(gulp.dest('./build/css'))
 );
 
 gulp.task('js', () => 
@@ -46,22 +41,22 @@ gulp.task('js', () =>
   .pipe(gulp.dest('./build/js'))
 );
 
-gulp.task('css', () =>
-  gulp.src(srcCSS)
-  .pipe(concat('style.css'))
-  .pipe(gulp.dest('./build/css'))
-);
+// gulp.task('css', () =>
+//   gulp.src(srcCSS)
+//   .pipe(concat('style.css'))
+//   .pipe(gulp.dest('./build/css'))
+// );
 
 gulp.task('miniCss', () =>
-  gulp.src(srcCSS)
-  .pipe(concat('style.min.css'))
+  gulp.src('./build/css/styles.css')
+  .pipe(concat('styles.min.css'))
   .pipe(minifycss())
   .pipe(gulp.dest('./build/css'))
 );
 
-gulp.task('default', ['html','css','js','miniCss','sass'], () => {
+gulp.task('default', ['html','js','sass','miniCss'], () => {
   gulp.watch(paths.tmpHTML, ['html'])
   gulp.watch(paths.tmpJS, ['js'])
-  gulp.watch(paths.tmpCSS, ['css','miniCss']),
   gulp.watch(paths.tmpSASS, ['sass'])
+  gulp.watch('./build/css/styles.css', ['miniCss'])
 });
