@@ -1,13 +1,13 @@
-.contenedor-item
-    h1.contenedor-item-titulo Datos de consulta
-    .contenedor-item-formulario
+.contenedor
+    h1.contenedor-titulo Datos de consulta
+    .contenedor-grid.form
         +data-section-item("Número de gaceta", "Número de gaceta")
-        .contenedor-item
-            label.label-titulo Fecha del ejemplar
-            div
+        .contenedor
+            label.label Fecha del ejemplar
+            div.contenedor-inputs
                 input(type="date" class="prueba" data-placeholder="Fecha" aria-required="true")
                 input(type="date")
         +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
-        div.contenedor-item-btns
+        div.contenedor-inputs
             button Limpiar
             button Consultar

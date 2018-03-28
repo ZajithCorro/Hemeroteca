@@ -10,32 +10,31 @@ append config
 block main
     main.main
         .contenedor
-            .contenedor-item
-                h1.contenedor-item-titulo= first_section
-                .contenedor-item-formulario
-                    +data-section-item("Número de gaceta", "Número de gaceta")
-                    +data-section-item("Folio", "Folio de gaceta")
-                    +data-section-item("Número de tomo", "Número de tomo de gaceta")
-                    +data-section-item("Páginas", "Número páginas")
-                    .contenedor-item.radio
-                        label.label-titulo Tipo
-                        .contenedor-tipo-radio
-                            div
-                                input#Ordinaria(type="radio", name="tipoGaceta")
-                                label(for="Ordinaria") Ordinaria
-                            div
-                                input#Extraordinaria(type="radio", name="tipoGaceta")
-                                label(for="Extraordinaria") Extraordinaria
-                            div
-                                input#Alcance(type="radio", name="tipoGaceta")
-                                label(for="Alcance") Alcance
-                    +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
+            h1.contenedor-titulo= first_section
+            .contenedor-grid.form
+                +data-section-item("Número de gaceta", "Número de gaceta")
+                +data-section-item("Folio", "Folio de gaceta")
+                +data-section-item("Número de tomo", "Número de tomo de gaceta")
+                +data-section-item("Páginas", "Número páginas")
+                .contenedor
+                    label.label Tipo
+                    .contenedor-radio
+                        div
+                            input#Ordinaria(type="radio", name="tipoGaceta")
+                            label(for="Ordinaria") Ordinaria
+                        div
+                            input#Extraordinaria(type="radio", name="tipoGaceta")
+                            label(for="Extraordinaria") Extraordinaria
+                        div
+                            input#Alcance(type="radio", name="tipoGaceta")
+                            label(for="Alcance") Alcance
+                +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
 
-            .contenedor-item
-                h1.contenedor-item-titulo= second_section
-                .contenedor-item-formulario
-                    +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
-                    +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
-                    +data-section-item("Persona quién entrega", "Nombre persona que entrega")
-                    +data-section-item("Ejemplares en hemeroteca", "Número")
-                    
+        .contenedor
+            h1.contenedor-titulo= second_section
+            .contenedor-grid.form
+                +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
+                +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
+                +data-section-item("Persona quién entrega", "Nombre persona que entrega")
+                +data-section-item("Ejemplares en hemeroteca", "Número")
+                

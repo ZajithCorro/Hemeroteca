@@ -8,6 +8,21 @@ append config
 block main
     main.main
         .contenedor
-            include ../includes/form-consulta.pug
-                    
-            h1.contenedor-item-titulo Resultados de búsqueda
+            h1.contenedor-titulo Datos de consulta
+            .contenedor-grid.form
+                +data-section-item("Número de gaceta", "Número de gaceta")
+                .contenedor
+                    label.label Fecha del ejemplar
+                    .contenedor-grid
+                        input(type="date")
+                        input(type="date")
+                .contenedor
+                    label.label Fecha de recepción
+                    .contenedor-grid
+                        input(type="date")
+                        input(type="date")
+                .contenedor-grid.contenedor-btns
+                    button Limpiar
+                    button Consultar
+                
+        h1.contenedor-titulo Resultados de búsqueda

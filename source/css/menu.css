@@ -14,6 +14,10 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
     width: 100%;
 }
 

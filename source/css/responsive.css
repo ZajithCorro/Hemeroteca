@@ -1,0 +1,18 @@
+/* ----- ----- ESTILOS DE RESPONSIVE ----- ----- */
+@media screen and (max-width: 800px) {
+    .main {
+        padding: 0;
+    }
+    
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-radio {
+        flex-direction: column;
+    }
+
+    .contenedor-radio > div{
+        margin-top: 10px;
+    }
+}
