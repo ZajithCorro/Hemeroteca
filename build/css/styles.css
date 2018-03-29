@@ -24,22 +24,6 @@ li {
   list-style: none;
 }
 
-/* ----- ----- PALETA DE COLORES ----- ----- */
-.main, .menu {
-  max-width: 1344px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.form, .contenedor-2-input, .contenedor-btns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.5rem;
-}
-
-/* ----- ----- PALETA DE COLORES ----- ----- */
 .main, .menu {
   max-width: 1344px;
   margin-left: auto;
@@ -95,21 +79,6 @@ li {
 
 .label::after {
   content: ":";
-}
-
-/* ----- ----- PALETA DE COLORES ----- ----- */
-.main, .menu {
-  max-width: 1344px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
-
-.form, .contenedor-2-input, .contenedor-btns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1.5rem;
 }
 
 /* ----- ----- ESTILOS DE MENÚ ----- ----- */
