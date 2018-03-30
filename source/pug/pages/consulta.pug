@@ -8,22 +8,109 @@ append config
 block main
     main.main
         .contenedor
-            h1.contenedor-titulo Datos de consulta
-            .form
-                +data-section-item("Número de gaceta", "Número de gaceta")
-                .contenedor
-                    label.label Fecha del ejemplar
-                    .contenedor-2-input
-                        input(type="date")
-                        input(type="date")
-                        
-                .contenedor
-                    label.label Fecha de recepción
-                    .contenedor-2-input
-                        input(type="date")
-                        input(type="date")
-                .contenedor-btns
-                    button.btn Limpiar
-                    button.btn Consultar
-                
-        h1.contenedor-titulo Resultados de búsqueda
+            include ../includes/form-consulta.pug
+
+            .contenedor-resultados
+                .card
+                    .card-img
+                        img(src="./img/libro.svg")
+                    .card-info
+                        .contenedor
+                            label.label Gaceta
+                            p 145
+                        .contenedor
+                            label.label(for="") Tipo
+                            p Ordinaria
+                        .contenedor
+                            label.label(for="") Fecha
+                            p 04/11/2017
+                        .contenedor
+                            label.label(for="") Páginas
+                            p 32
+                        .contenedor
+                            label.label(for="") Tiraje
+                            p 135
+                        .contenedor
+                            label.label(for="") Existencia
+                            p 28
+                    .card-opc
+                        button.btn Dígital
+                        button.btn Modificar
+
+                .card
+                    .card-img
+                        img(src="./img/libro.svg")
+                    .card-info
+                        .contenedor
+                            label.label Gaceta
+                            p 145
+                        .contenedor
+                            label.label(for="") Tipo
+                            p Ordinaria
+                        .contenedor
+                            label.label(for="") Fecha
+                            p 04/11/2017
+                        .contenedor
+                            label.label(for="") Páginas
+                            p 32
+                        .contenedor
+                            label.label(for="") Tiraje
+                            p 135
+                        .contenedor
+                            label.label(for="") Existencia
+                            p 28
+                    .card-opc
+                        button.btn Dígital
+                        button.btn Modificar
+
+                .card
+                    .card-img
+                        img(src="./img/libro.svg")
+                    .card-info
+                        .contenedor
+                            label.label Gaceta
+                            p 145
+                        .contenedor
+                            label.label(for="") Tipo
+                            p Ordinaria
+                        .contenedor
+                            label.label(for="") Fecha
+                            p 04/11/2017
+                        .contenedor
+                            label.label(for="") Páginas
+                            p 32
+                        .contenedor
+                            label.label(for="") Tiraje
+                            p 135
+                        .contenedor
+                            label.label(for="") Existencia
+                            p 28
+                    .card-opc
+                        button.btn Dígital
+                        button.btn Modificar
+
+                .card
+                    .card-img
+                        img(src="./img/libro.svg")
+                    .card-info
+                        .contenedor
+                            label.label Gaceta
+                            p 145
+                        .contenedor
+                            label.label(for="") Tipo
+                            p Ordinaria
+                        .contenedor
+                            label.label(for="") Fecha
+                            p 04/11/2017
+                        .contenedor
+                            label.label(for="") Páginas
+                            p 32
+                        .contenedor
+                            label.label(for="") Tiraje
+                            p 135
+                        .contenedor
+                            label.label(for="") Existencia
+                            p 28
+                    .card-opc
+                        button.btn Dígital
+                        button.btn Modificar

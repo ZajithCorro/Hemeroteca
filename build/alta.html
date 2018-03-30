@@ -22,69 +22,96 @@
       </nav>
     </header>
     <main class="main">
-      <div class="contenedor">
-        <h1 class="contenedor-titulo">Datos de Gaceta</h1>
-        <div class="form">
-              <div class="contenedor">
-                <label class="label" for="Número de gaceta">Número de gaceta</label>
-                <input type="text" name="Número de gaceta" id="Número de gaceta" placeholder="Número de gaceta"/>
+      <form id="form" method="post">
+        <div class="contenedor">
+          <h1 class="contenedor-titulo">Datos de Gaceta</h1>
+          <div class="form">
+                <div class="contenedor">
+                  <label class="label" for="Número de gaceta">Número de gaceta</label>
+                  <input type="text" name="Número de gaceta" id="Número de gaceta" placeholder="Número de gaceta"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Folio de gaceta">Folio</label>
+                  <input type="text" name="Folio de gaceta" id="Folio de gaceta" placeholder="Folio de gaceta"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Número de tomo de gaceta">Número de tomo</label>
+                  <input type="text" name="Número de tomo de gaceta" id="Número de tomo de gaceta" placeholder="Número de tomo de gaceta"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Número páginas">Páginas</label>
+                  <input type="text" name="Número páginas" id="Número páginas" placeholder="Número páginas"/>
+                </div>
+            <div class="contenedor">
+              <label class="label">Tipo</label>
+              <div class="contenedor-radio">
+                <div>
+                  <input id="Ordinaria" type="radio" name="tipoGaceta"/>
+                  <label for="Ordinaria">Ordinaria</label>
+                </div>
+                <div>
+                  <input id="Extraordinaria" type="radio" name="tipoGaceta"/>
+                  <label for="Extraordinaria">Extraordinaria</label>
+                </div>
+                <div>
+                  <input id="Alcance" type="radio" name="tipoGaceta"/>
+                  <label for="Alcance">Alcance</label>
+                </div>
               </div>
-              <div class="contenedor">
-                <label class="label" for="Folio de gaceta">Folio</label>
-                <input type="text" name="Folio de gaceta" id="Folio de gaceta" placeholder="Folio de gaceta"/>
-              </div>
-              <div class="contenedor">
-                <label class="label" for="Número de tomo de gaceta">Número de tomo</label>
-                <input type="text" name="Número de tomo de gaceta" id="Número de tomo de gaceta" placeholder="Número de tomo de gaceta"/>
-              </div>
-              <div class="contenedor">
-                <label class="label" for="Número páginas">Páginas</label>
-                <input type="text" name="Número páginas" id="Número páginas" placeholder="Número páginas"/>
-              </div>
-          <div class="contenedor">
-            <label class="label">Tipo</label>
-            <div class="contenedor-radio">
-              <div>
-                <input id="Ordinaria" type="radio" name="tipoGaceta"/>
-                <label for="Ordinaria">Ordinaria</label>
-              </div>
-              <div>
-                <input id="Extraordinaria" type="radio" name="tipoGaceta"/>
-                <label for="Extraordinaria">Extraordinaria</label>
-              </div>
-              <div>
-                <input id="Alcance" type="radio" name="tipoGaceta"/>
-                <label for="Alcance">Alcance</label>
+            </div>
+                <div class="contenedor">
+                  <label class="label" for="Fecha de gaceta">Fecha de ejemplar</label>
+                  <input type="date" name="Fecha de gaceta" id="Fecha de gaceta" placeholder="Fecha de gaceta"/>
+                </div>
+          </div>
+        </div>
+        <div class="contenedor">
+          <h1 class="contenedor-titulo">Recepción</h1>
+          <div class="form">
+                <div class="contenedor">
+                  <label class="label" for="Fecha de recepción">Fecha de recepción</label>
+                  <input type="date" name="Fecha de recepción" id="Fecha de recepción" placeholder="Fecha de recepción"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Número de ejemplares de gaceta">Número de ejemplares</label>
+                  <input type="text" name="Número de ejemplares de gaceta" id="Número de ejemplares de gaceta" placeholder="Número de ejemplares de gaceta"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Nombre persona que entrega">Persona quién entrega</label>
+                  <input type="text" name="Nombre persona que entrega" id="Nombre persona que entrega" placeholder="Nombre persona que entrega"/>
+                </div>
+                <div class="contenedor">
+                  <label class="label" for="Número">Ejemplares en hemeroteca</label>
+                  <input type="text" name="Número" id="Número" placeholder="Número"/>
+                </div>
+            <div class="contenedor entrega">
+              <label class="label">Entregado a</label>
+              <div class="contenedor-radio">
+                <div>
+                  <input id="Director" type="radio" name="entrega"/>
+                  <label for="Director">Director</label>
+                </div>
+                <div>
+                  <input id="Hemeroteca" type="radio" name="entrega"/>
+                  <label for="Hemeroteca">Hemeroteca</label>
+                </div>
+                <div>
+                  <input id="Ruta" type="radio" name="entrega"/>
+                  <label for="Ruta">Ruta</label>
+                </div>
+                <div>
+                  <input id="Modulo" type="radio" name="entrega"/>
+                  <label for="Modulo">Módulo</label>
+                </div>
+                <div>
+                  <input id="Suscripciones" type="radio" name="entrega"/>
+                  <label for="Suscripciones">Suscripciones</label>
+                </div>
               </div>
             </div>
           </div>
-              <div class="contenedor">
-                <label class="label" for="Fecha de gaceta">Fecha de ejemplar</label>
-                <input type="date" name="Fecha de gaceta" id="Fecha de gaceta" placeholder="Fecha de gaceta"/>
-              </div>
         </div>
-      </div>
-      <div class="contenedor">
-        <h1 class="contenedor-titulo">Recepción</h1>
-        <div class="form">
-              <div class="contenedor">
-                <label class="label" for="Fecha de recepción">Fecha de recepción</label>
-                <input type="date" name="Fecha de recepción" id="Fecha de recepción" placeholder="Fecha de recepción"/>
-              </div>
-              <div class="contenedor">
-                <label class="label" for="Número de ejemplares de gaceta">Número de ejemplares</label>
-                <input type="text" name="Número de ejemplares de gaceta" id="Número de ejemplares de gaceta" placeholder="Número de ejemplares de gaceta"/>
-              </div>
-              <div class="contenedor">
-                <label class="label" for="Nombre persona que entrega">Persona quién entrega</label>
-                <input type="text" name="Nombre persona que entrega" id="Nombre persona que entrega" placeholder="Nombre persona que entrega"/>
-              </div>
-              <div class="contenedor">
-                <label class="label" for="Número">Ejemplares en hemeroteca</label>
-                <input type="text" name="Número" id="Número" placeholder="Número"/>
-              </div>
-        </div>
-      </div>
+      </form>
     </main>
   </body>
 </html>

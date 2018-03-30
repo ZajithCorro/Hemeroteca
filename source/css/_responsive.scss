@@ -12,9 +12,25 @@
         flex-direction: column;
     }
 
+    .entrega {
+        grid-column-start: auto;
+    }
+
     .contenedor-radio {
         div {
             margin-top: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-resultados {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor-resultados {
+        grid-template-columns: 1fr;
     }
 }

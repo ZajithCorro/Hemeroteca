@@ -9,32 +9,52 @@ append config
 
 block main
     main.main
-        .contenedor
-            h1.contenedor-titulo= first_section
-            .form
-                +data-section-item("Número de gaceta", "Número de gaceta")
-                +data-section-item("Folio", "Folio de gaceta")
-                +data-section-item("Número de tomo", "Número de tomo de gaceta")
-                +data-section-item("Páginas", "Número páginas")
-                .contenedor
-                    label.label Tipo
-                    .contenedor-radio
-                        div
-                            input#Ordinaria(type="radio", name="tipoGaceta")
-                            label(for="Ordinaria") Ordinaria
-                        div
-                            input#Extraordinaria(type="radio", name="tipoGaceta")
-                            label(for="Extraordinaria") Extraordinaria
-                        div
-                            input#Alcance(type="radio", name="tipoGaceta")
-                            label(for="Alcance") Alcance
-                +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
+        form#form(method="post")
+            .contenedor
+                h1.contenedor-titulo= first_section
+                .form
+                    +data-section-item("Número de gaceta", "Número de gaceta")
+                    +data-section-item("Folio", "Folio de gaceta")
+                    +data-section-item("Número de tomo", "Número de tomo de gaceta")
+                    +data-section-item("Páginas", "Número páginas")
+                    .contenedor
+                        label.label Tipo
+                        .contenedor-radio
+                            div
+                                input#Ordinaria(type="radio", name="tipoGaceta")
+                                label(for="Ordinaria") Ordinaria
+                            div
+                                input#Extraordinaria(type="radio", name="tipoGaceta")
+                                label(for="Extraordinaria") Extraordinaria
+                            div
+                                input#Alcance(type="radio", name="tipoGaceta")
+                                label(for="Alcance") Alcance
+                    +data-section-item("Fecha de ejemplar", "Fecha de gaceta", "date")
 
-        .contenedor
-            h1.contenedor-titulo= second_section
-            .form
-                +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
-                +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
-                +data-section-item("Persona quién entrega", "Nombre persona que entrega")
-                +data-section-item("Ejemplares en hemeroteca", "Número")
+            .contenedor
+                h1.contenedor-titulo= second_section
+                .form
+                    +data-section-item("Fecha de recepción", "Fecha de recepción", "date")
+                    +data-section-item("Número de ejemplares", "Número de ejemplares de gaceta")
+                    +data-section-item("Persona quién entrega", "Nombre persona que entrega")
+                    +data-section-item("Ejemplares en hemeroteca", "Número")
+                    .contenedor.entrega
+                        label.label Entregado a
+                        .contenedor-radio
+                            div
+                                input#Director(type="radio", name="entrega")
+                                label(for="Director") Director
+                            div
+                                input#Hemeroteca(type="radio", name="entrega")
+                                label(for="Hemeroteca") Hemeroteca
+                            div
+                                input#Ruta(type="radio", name="entrega")
+                                label(for="Ruta") Ruta
+                            div
+                                input#Modulo(type="radio", name="entrega")
+                                label(for="Modulo") Módulo
+                            div
+                                input#Suscripciones(type="radio", name="entrega")
+                                label(for="Suscripciones") Suscripciones
+
                 
