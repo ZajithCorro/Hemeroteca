@@ -73,6 +73,7 @@ li {
   grid-column-start: span 2;
 }
 
+/* ----- ----- ESTILOS DE RESULTADOS DE BUSQUEDA ----- ----- */
 .contenedor-resultados {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
